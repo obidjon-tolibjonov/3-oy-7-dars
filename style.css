@@ -1,0 +1,43 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.block {
+    width: 300px;
+    height: 300px;
+}
+
+.block:nth-of-type(2n) {
+    background-color: green;
+}
+
+.block:nth-of-type(2n+1) {
+    background-color: blue;
+}
+
+@media (max-width: 1030px) {
+    .block:nth-of-type(2n+1) {
+        background-color: red;
+    }
+}
+
+@media (max-width: 770px) {
+    .block:nth-of-type(2n+1) {
+        background-color: yellow;
+    }
+}
+
+@media (max-width: 430px) {
+    .block:nth-of-type(2n+1) {
+        background-color: black;
+    }
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
